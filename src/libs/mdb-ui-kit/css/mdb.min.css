@@ -8057,6 +8057,7 @@ fieldset:disabled .btn {
 .h-card {
   height: 36px !important
 }
+
 .h-25 {
   height: 25% !important
 }
@@ -8776,6 +8777,7 @@ fieldset:disabled .btn {
   padding-right: 3rem !important;
   padding-left: 3rem !important
 }
+
 .px-6 {
   padding-right: 11px !important;
   padding-left: 11px !important
@@ -8910,7 +8912,7 @@ fieldset:disabled .btn {
 .fs-1 {
   font-size: 14px !important;
   margin: 0;
-  
+
 }
 
 .fs-2 {
@@ -13725,13 +13727,16 @@ button:focus {
 .bg-secondary {
   background-color: #b23cfd !important
 }
-.bg-card-1{
+
+.bg-card-1 {
   background: #9B51E0 !important
 }
-.bg-card-2{
+
+.bg-card-2 {
   background: #56CCF2 !important
 }
-.bg-card-3{
+
+.bg-card-3 {
   background: linear-gradient(90deg, #E6750C 0%, #EE4700 100%) !important
 }
 

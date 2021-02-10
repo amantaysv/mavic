@@ -1,6 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Ubuntu' sans-serif;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@import "../scss/header";
+@import "../scss/home";
+@import "../scss/about";
+@import "../scss/advantages";
+@import "../scss/characteristics";
+@import "../scss/questions";
+@import "../scss/contacts";
