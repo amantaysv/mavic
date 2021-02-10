@@ -17,6 +17,13 @@ body {
     margin: 0 auto;
 }
 
+.next-page {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 30px;
+}
+
 a {
     text-decoration: none;
 }
