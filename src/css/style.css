@@ -36,10 +36,12 @@ li {
 }
 
 .header {
-  background: #000;
+  padding-top: 43px;
+  position: fixed;
+  width: 100%;
 }
 
-.header__contant {
+.header__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,37 +53,69 @@ li {
           align-items: center;
 }
 
-.header .logo__link {
-  padding-top: 5px;
-}
-
-.header .logo__text {
-  margin-left: -100px;
-  color: #FEFEFE;
-}
-
-.header .nav__list {
+.header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 18px;
 }
 
-.header .nav__item {
-  margin: 0 15px;
-}
-
-.header .nav__link-link {
-  color: #FEFEFE;
+.header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-transform: uppercase;
 }
 
+.header .nav__item {
+  margin-right: 20px;
+}
+
+.header .nav__item:last-child {
+  margin-right: 0;
+}
+
+.header .nav__link {
+  color: #fff;
+  font-size: 15px;
+}
+
+.header .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header .contact__btn {
-  border: 1px solid white;
-  color: #FEFEFE;
+  display: block;
+  text-align: center;
+  width: 115px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: 8px;
 }
 
 .header .contact__phone {
-  color: #FEFEFE;
+  color: #fff;
+}
+
+.home {
+  padding-top: 768px;
+  background: url(../img/background.png) center center no-repeat;
 }
 
 .about {
