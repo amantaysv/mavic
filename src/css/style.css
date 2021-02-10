@@ -7,12 +7,14 @@
 }
 
 body {
-  font-family: 'Ubuntu' sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
 }
 
 .container {
   max-width: 1220px;
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 a {
@@ -23,7 +25,41 @@ li {
   list-style: none;
 }
 
-* {
-  padding: 0;
+.about {
+  padding-top: 150px;
+  padding-bottom: 255px;
+  padding-left: 90px;
+  background: url(../img/fog-bg.png);
+}
+
+.about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .row .col {
+  -webkit-column-gap: 136px;
+          column-gap: 136px;
+}
+
+.about__title {
+  font-size: 44px;
+}
+
+.about__descr {
+  font-size: 17px;
+  font-weight: 300;
+  max-width: 440px;
+  margin-top: 55px;
+  margin-left: 30px;
+  line-height: 1.5;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

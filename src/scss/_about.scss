@@ -1,3 +1,36 @@
-* {
-   padding: 0;
+.about {
+   padding-top: 150px;
+   padding-bottom: 255px;
+   padding-left: 90px;
+   background: url(../img/fog-bg.png);
+
+   .row {
+      display: flex;
+
+      .col {
+         column-gap: 136px;
+
+         .wrapper {}
+      }
+   }
+
+   &__title {
+      font-size: 44px;
+   }
+
+   &__descr {
+      font-size: 17px;
+      font-weight: 300;
+      max-width: 440px;
+      margin-top: 55px;
+      margin-left: 30px;
+      line-height: 1.5;
+   }
+
+   &__text {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28;
+      text-align: center;
+   }
 }
