@@ -8,13 +8,27 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+<<<<<<< HEAD
     background: #000;
+=======
+    color: #fff;
+>>>>>>> 473c2a300b5a081c55dd9c5bc6390f03d30ce7fe
 }
 
 .container {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+}
+
+.next-page {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 30px;
+>>>>>>> 473c2a300b5a081c55dd9c5bc6390f03d30ce7fe
 }
 
 a {
