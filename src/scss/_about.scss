@@ -1,6 +1,6 @@
 .about {
    position: relative;
-   padding-top: 20vh;
+   @include adaptiv-value(padding-top, 220, 100, 0);
    padding-bottom: 98px;
    padding-left: 90px;
    background: url(../img/fog-bg.png) center center/cover no-repeat;

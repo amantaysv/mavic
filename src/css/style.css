@@ -233,7 +233,7 @@ li {
 
 .home {
   position: relative;
-  padding-top: 30vh;
+  padding-top: calc(100px + 180 * ((100vw - 320px) / 1600));
   padding-bottom: 60px;
   background: url(../img/background.png) 0 0/cover no-repeat;
   width: 100vw;
@@ -261,7 +261,7 @@ li {
 
 .about {
   position: relative;
-  padding-top: 20vh;
+  padding-top: calc(100px + 120 * ((100vw - 320px) / 1600));
   padding-bottom: 98px;
   padding-left: 90px;
   background: url(../img/fog-bg.png) center center/cover no-repeat;

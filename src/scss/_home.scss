@@ -1,6 +1,6 @@
 .home {
    position: relative;
-   padding-top: 30vh;
+   @include adaptiv-value(padding-top, 280, 100, 0);
    padding-bottom: 60px;
    background: url(../img/background.png) 0 0/cover no-repeat;
    width: 100vw;
@@ -11,10 +11,12 @@
       line-height: 115px;
       text-align: center;
    }
+
    &__img {
       display: block;
       margin: 5vh auto 0;
    }
+
    &__descr {
       font-size: 17px;
       line-height: 1.5;
