@@ -1,5 +1,5 @@
 .header {
-    padding-top: 43px;
+
     position: fixed;
     width: 100%;
 
@@ -56,5 +56,110 @@
             color: #fff;
 
         }
+    }
+}
+
+.header {
+    padding-top: 35px;
+    width: 100%;
+
+    .navbar {
+        max-width: 1238px;
+        margin: 0 auto;
+
+        &-brand {
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        &-toggler {
+            &.collapsed {
+                .burger__line {
+                    background: #fff;
+
+                    &::before {
+                        top: 8px;
+                        transform: rotate(0);
+                    }
+
+                    &::after {
+                        bottom: 8px;
+                        transform: rotate(0);
+                    }
+                }
+            }
+
+            .burger {
+                height: 26px;
+                width: 26px;
+
+                &__line {
+                    position: relative;
+                    width: 30px;
+                    height: 2px;
+                    background: none;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background: #fff;
+                        transform: rotate(135deg);
+                        transition: 0.25s;
+                    }
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        bottom: 0;
+                        left: 0;
+                        background: #fff;
+                        transform: rotate(45deg);
+                        transition: 0.25s;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav__link {
+        position: relative;
+        display: inline;
+
+        &:hover::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            -webkit-text-stroke: 1px #fff;
+
+        }
+
+        &.active::before {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        &::before {
+            content: attr(data-content);
+            position: absolute;
+            top: -3px;
+            padding-bottom: 4px;
+            border-bottom: 3px solid #ffffff;
+            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+            transition: clip-path 0.5s ease-in;
+            z-index: 2;
+        }
+    }
+
+    .btn1 {
+        border: 1px solid #fff;
+        width: 115px;
+        height: 30px;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        margin-right: 8px;
     }
 }

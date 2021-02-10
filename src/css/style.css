@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+@import url(../libs/mdb-ui-kit/css/mdb.min.css);
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,6 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-  background: #000;
   color: #fff;
 }
 
@@ -36,7 +36,6 @@ li {
 }
 
 .header {
-  padding-top: 43px;
   position: fixed;
   width: 100%;
 }
@@ -113,9 +112,148 @@ li {
   color: #fff;
 }
 
+.header {
+  padding-top: 35px;
+  width: 100%;
+}
+
+.header .navbar {
+  max-width: 1238px;
+  margin: 0 auto;
+}
+
+.header .navbar-brand {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header .navbar-toggler.collapsed .burger__line {
+  background: #fff;
+}
+
+.header .navbar-toggler.collapsed .burger__line::before {
+  top: 8px;
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.header .navbar-toggler.collapsed .burger__line::after {
+  bottom: 8px;
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.header .navbar-toggler .burger {
+  height: 26px;
+  width: 26px;
+}
+
+.header .navbar-toggler .burger__line {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background: none;
+}
+
+.header .navbar-toggler .burger__line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.header .navbar-toggler .burger__line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.header .nav__link {
+  position: relative;
+  display: inline;
+}
+
+.header .nav__link:hover::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-text-stroke: 1px #fff;
+}
+
+.header .nav__link.active::before {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.header .nav__link::before {
+  content: attr(data-content);
+  position: absolute;
+  top: -3px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #ffffff;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  -webkit-transition: -webkit-clip-path 0.5s ease-in;
+  transition: -webkit-clip-path 0.5s ease-in;
+  -o-transition: clip-path 0.5s ease-in;
+  transition: clip-path 0.5s ease-in;
+  transition: clip-path 0.5s ease-in, -webkit-clip-path 0.5s ease-in;
+  z-index: 2;
+}
+
+.header .btn1 {
+  border: 1px solid #fff;
+  width: 115px;
+  height: 30px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 8px;
+}
+
 .home {
-  padding-top: 768px;
+  position: relative;
+  padding-top: 218px;
+  padding-bottom: 60px;
   background: url(../img/background.png) center center no-repeat;
+}
+
+.home__title {
+  font-size: 96px;
+  line-height: 115px;
+  text-align: center;
+}
+
+.home__img {
+  display: block;
+  margin: 25px auto;
+}
+
+.home__descr {
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 300;
 }
 
 .about {
