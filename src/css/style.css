@@ -8,19 +8,14 @@
 
 body {
   font-family: 'Ubuntu', sans-serif;
-<<<<<<< HEAD
   background: #000;
-=======
   color: #fff;
->>>>>>> 473c2a300b5a081c55dd9c5bc6390f03d30ce7fe
 }
 
 .container {
   max-width: 1220px;
   padding: 0 10px;
   margin: 0 auto;
-<<<<<<< HEAD
-=======
 }
 
 .next-page {
@@ -30,7 +25,6 @@ body {
       -ms-transform: translate(-50%);
           transform: translate(-50%);
   bottom: 30px;
->>>>>>> 473c2a300b5a081c55dd9c5bc6390f03d30ce7fe
 }
 
 a {
@@ -41,7 +35,10 @@ li {
   list-style: none;
 }
 
-<<<<<<< HEAD
+.header {
+  background: #000;
+}
+
 .header__contant {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,13 +75,15 @@ li {
   text-transform: uppercase;
 }
 
-.header__btn {
-  border: 1px solid #ffffff;
+.header .contact__btn {
+  border: 1px solid white;
+  color: #FEFEFE;
 }
 
-* {
-  padding: 0;
-=======
+.header .contact__phone {
+  color: #FEFEFE;
+}
+
 .about {
   position: relative;
   padding-top: 150px;
@@ -136,6 +135,5 @@ li {
   text-align: right;
   margin-bottom: 41px;
   padding-right: 19px;
->>>>>>> 473c2a300b5a081c55dd9c5bc6390f03d30ce7fe
 }
 /*# sourceMappingURL=style.css.map */

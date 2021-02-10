@@ -1,4 +1,6 @@
 .header {
+    background: #000;
+
     &__contant {
         display: flex;
         justify-content: space-between;
@@ -35,7 +37,7 @@
 
     .contact {
         &__btn {
-            border: 1px solid rgb(255, 255, 255, 1);
+            border: 1px solid rgba(255, 255, 255, 1);
             color: #FEFEFE;
         }
 
