@@ -24,7 +24,7 @@ body {
   -webkit-transform: translate(-50%);
       -ms-transform: translate(-50%);
           transform: translate(-50%);
-  bottom: 30px;
+  bottom: 50px;
 }
 
 a {
@@ -233,9 +233,11 @@ li {
 
 .home {
   position: relative;
-  padding-top: 218px;
+  padding-top: 30vh;
   padding-bottom: 60px;
-  background: url(../img/background.png) center center no-repeat;
+  background: url(../img/background.png) 0 0/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 .home__title {
@@ -246,7 +248,7 @@ li {
 
 .home__img {
   display: block;
-  margin: 25px auto;
+  margin: 5vh auto 0;
 }
 
 .home__descr {
@@ -254,14 +256,17 @@ li {
   line-height: 1.5;
   text-align: center;
   font-weight: 300;
+  margin-top: 10vh;
 }
 
 .about {
   position: relative;
-  padding-top: 150px;
+  padding-top: 20vh;
   padding-bottom: 98px;
   padding-left: 90px;
-  background: url(../img/fog-bg.png) center center no-repeat;
+  background: url(../img/fog-bg.png) center center/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
 }
 
 .about .row {

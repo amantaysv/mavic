@@ -1,8 +1,10 @@
 .home {
    position: relative;
-   padding-top: 218px;
+   padding-top: 30vh;
    padding-bottom: 60px;
-   background: url(../img/background.png) center center no-repeat;
+   background: url(../img/background.png) 0 0/cover no-repeat;
+   width: 100vw;
+   height: 100vh;
 
    &__title {
       font-size: 96px;
@@ -11,12 +13,13 @@
    }
    &__img {
       display: block;
-      margin: 25px auto;
+      margin: 5vh auto 0;
    }
    &__descr {
       font-size: 17px;
       line-height: 1.5;
       text-align: center;
       font-weight: 300;
+      margin-top: 10vh;
    }
 }
