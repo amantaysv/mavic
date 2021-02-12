@@ -1,27 +1,26 @@
 .home {
    position: relative;
-   @include adaptiv-value(padding-top, 280, 100, 0);
+   @include adaptiv-value(padding-top, 220, 100, 0);
    padding-bottom: 60px;
    background: url(../img/background.png) 0 0/cover no-repeat;
    width: 100vw;
    height: 100vh;
 
    &__title {
-      font-size: 96px;
-      line-height: 115px;
+      @include adaptiv-value(font-size, 96, 46, 0);
+      line-height: 1.2;
       text-align: center;
    }
 
    &__img {
       display: block;
-      margin: 5vh auto 0;
+      margin: 25px auto;
    }
 
    &__descr {
-      font-size: 17px;
+      @include adaptiv-value(font-size, 17, 14, 0);
       line-height: 1.5;
       text-align: center;
       font-weight: 300;
-      margin-top: 10vh;
    }
 }

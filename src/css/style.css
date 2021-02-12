@@ -16,6 +16,7 @@ body {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
           transform: translate(-50%);
   bottom: 50px;
 }
@@ -26,83 +27,6 @@ a {
 
 li {
   list-style: none;
-}
-
-.header {
-  position: fixed;
-  width: 100%;
-}
-
-.header__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fff;
-  font-size: 18px;
-}
-
-.header .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-transform: uppercase;
-}
-
-.header .nav__item {
-  margin-right: 20px;
-}
-
-.header .nav__item:last-child {
-  margin-right: 0;
-}
-
-.header .nav__link {
-  color: #fff;
-  font-size: 15px;
-}
-
-.header .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.header .contact__btn {
-  display: block;
-  text-align: center;
-  width: 115px;
-  height: 30px;
-  line-height: 30px;
-  border: 1px solid #fff;
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #fff;
-  margin-right: 8px;
-}
-
-.header .contact__phone {
-  color: #fff;
 }
 
 .header {
@@ -127,12 +51,14 @@ li {
 .header .navbar-toggler.collapsed .burger__line::before {
   top: 8px;
   -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
           transform: rotate(0);
 }
 
 .header .navbar-toggler.collapsed .burger__line::after {
   bottom: 8px;
   -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
           transform: rotate(0);
 }
 
@@ -157,8 +83,10 @@ li {
   left: 0;
   background: #fff;
   -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
           transform: rotate(135deg);
   -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -171,8 +99,10 @@ li {
   left: 0;
   background: #fff;
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: 0.25s;
+  -o-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -202,6 +132,7 @@ li {
           clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   -webkit-transition: -webkit-clip-path 0.5s ease-in;
   transition: -webkit-clip-path 0.5s ease-in;
+  -o-transition: clip-path 0.5s ease-in;
   transition: clip-path 0.5s ease-in;
   transition: clip-path 0.5s ease-in, -webkit-clip-path 0.5s ease-in;
   z-index: 2;
@@ -219,7 +150,7 @@ li {
 
 .home {
   position: relative;
-  padding-top: calc(100px + 180 * ((100vw - 320px) / 1600));
+  padding-top: calc(100px + 120 * ((100vw - 320px) / 1120));
   padding-bottom: 60px;
   background: url(../img/background.png) 0 0/cover no-repeat;
   width: 100vw;
@@ -227,27 +158,26 @@ li {
 }
 
 .home__title {
-  font-size: 96px;
-  line-height: 115px;
+  font-size: calc(46px + 50 * ((100vw - 320px) / 1120));
+  line-height: 1.2;
   text-align: center;
 }
 
 .home__img {
   display: block;
-  margin: 5vh auto 0;
+  margin: 25px auto;
 }
 
 .home__descr {
-  font-size: 17px;
+  font-size: calc(14px + 3 * ((100vw - 320px) / 1120));
   line-height: 1.5;
   text-align: center;
   font-weight: 300;
-  margin-top: 10vh;
 }
 
 .about {
   position: relative;
-  padding-top: calc(100px + 120 * ((100vw - 320px) / 1600));
+  padding-top: calc(100px + 50 * ((100vw - 320px) / 1120));
   padding-bottom: 98px;
   padding-left: 90px;
   background: url(../img/fog-bg.png) center center/cover no-repeat;
@@ -268,11 +198,11 @@ li {
 }
 
 .about__title {
-  font-size: 44px;
+  font-size: calc(24px + 20 * ((100vw - 320px) / 1120));
 }
 
 .about__descr {
-  font-size: 17px;
+  font-size: calc(14px + 3 * ((100vw - 320px) / 1120));
   font-weight: 300;
   max-width: 440px;
   margin-top: 55px;
@@ -293,7 +223,7 @@ li {
 
 .about__text {
   font-weight: 500;
-  font-size: 24px;
+  font-size: calc(16px + 8 * ((100vw - 320px) / 1120));
   line-height: 28px;
   text-align: right;
   margin-bottom: 41px;
@@ -302,7 +232,7 @@ li {
 
 .advantages {
   position: relative;
-  padding-top: calc(100px + 120 * ((100vw - 320px) / 1600));
+  padding-top: calc(100px + 50 * ((100vw - 320px) / 1120));
   padding-bottom: 98px;
   padding-left: 90px;
   background: url(../img/fog-bg.png) center center/cover no-repeat;

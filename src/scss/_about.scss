@@ -1,6 +1,6 @@
 .about {
    position: relative;
-   @include adaptiv-value(padding-top, 220, 100, 0);
+   @include adaptiv-value(padding-top, 150, 100, 0);
    padding-bottom: 98px;
    padding-left: 90px;
    background: url(../img/fog-bg.png) center center/cover no-repeat;
@@ -19,11 +19,11 @@
    }
 
    &__title {
-      font-size: 44px;
+      @include adaptiv-value(font-size, 44, 24, 0);
    }
 
    &__descr {
-      font-size: 17px;
+      @include adaptiv-value(font-size, 17, 14, 0);
       font-weight: 300;
       max-width: 440px;
       margin-top: 55px;
@@ -44,7 +44,7 @@
 
    &__text {
       font-weight: 500;
-      font-size: 24px;
+      @include adaptiv-value(font-size, 24, 16, 0);
       line-height: 28px;
       text-align: right;
       margin-bottom: 41px;
