@@ -20,6 +20,14 @@ body {
   bottom: 50px;
 }
 
+.next-page-up {
+  position: absolute;
+  -webkit-transform: translate(-50%) rotate(180deg);
+          transform: translate(-50%) rotate(180deg);
+  left: 50%;
+  bottom: 50px;
+}
+
 a {
   text-decoration: none;
 }

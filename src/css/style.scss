@@ -17,7 +17,15 @@ body {
     left: 50%;
     transform: translate(-50%);
     bottom: 50px;
+     
+    &-up{
+        position: absolute;
+        transform: translate(-50%)  rotate(180deg);
+        left: 50%;
+        bottom: 50px;
+    }
 }
+
 
 a {
     text-decoration: none;
