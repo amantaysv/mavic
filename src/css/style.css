@@ -106,9 +106,21 @@ li {
   transition: 0.25s;
 }
 
+.header .nav__item {
+  margin-right: 20px;
+  font-size: 15px;
+  line-height: 2;
+}
+
+.header .nav__item:last-child {
+  margin-right: 0;
+}
+
 .header .nav__link {
   position: relative;
   display: inline;
+  color: #fff;
+  font-size: 15px;
 }
 
 .header .nav__link:hover::before {
@@ -125,7 +137,7 @@ li {
 .header .nav__link::before {
   content: attr(data-content);
   position: absolute;
-  top: -3px;
+  top: -6px;
   padding-bottom: 4px;
   border-bottom: 3px solid #ffffff;
   -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
@@ -135,7 +147,6 @@ li {
   -o-transition: clip-path 0.5s ease-in;
   transition: clip-path 0.5s ease-in;
   transition: clip-path 0.5s ease-in, -webkit-clip-path 0.5s ease-in;
-  z-index: 2;
 }
 
 .header .btn1 {
