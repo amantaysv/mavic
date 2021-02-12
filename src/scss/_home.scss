@@ -4,7 +4,7 @@
    padding-bottom: 60px;
    background: url(../img/background.png) 0 0/cover no-repeat;
    width: 100vw;
-   height: 100vh;
+   // height: 100vh;
 
    &__title {
       @include adaptiv-value(font-size, 96, 46, 0);
