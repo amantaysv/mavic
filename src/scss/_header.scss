@@ -111,5 +111,11 @@
         text-align: center;
         line-height: 30px;
         margin-right: 8px;
+
+        &:hover{
+            transition: 0.25s;
+            background: rgba(255,255,255,1);
+            color: #000;
+        }
     }
 }

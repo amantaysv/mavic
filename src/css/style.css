@@ -16,7 +16,6 @@ body {
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
           transform: translate(-50%);
   bottom: 50px;
 }
@@ -24,7 +23,6 @@ body {
 .next-page-up {
   position: absolute;
   -webkit-transform: translate(-50%) rotate(180deg);
-      -ms-transform: translate(-50%) rotate(180deg);
           transform: translate(-50%) rotate(180deg);
   left: 50%;
   bottom: 50px;
@@ -60,14 +58,12 @@ li {
 .header .navbar-toggler.collapsed .burger__line::before {
   top: 8px;
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
 }
 
 .header .navbar-toggler.collapsed .burger__line::after {
   bottom: 8px;
   -webkit-transform: rotate(0);
-      -ms-transform: rotate(0);
           transform: rotate(0);
 }
 
@@ -92,10 +88,8 @@ li {
   left: 0;
   background: #fff;
   -webkit-transform: rotate(135deg);
-      -ms-transform: rotate(135deg);
           transform: rotate(135deg);
   -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -108,10 +102,8 @@ li {
   left: 0;
   background: #fff;
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   -webkit-transition: 0.25s;
-  -o-transition: 0.25s;
   transition: 0.25s;
 }
 
@@ -153,7 +145,6 @@ li {
           clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   -webkit-transition: -webkit-clip-path 0.5s ease-in;
   transition: -webkit-clip-path 0.5s ease-in;
-  -o-transition: clip-path 0.5s ease-in;
   transition: clip-path 0.5s ease-in;
   transition: clip-path 0.5s ease-in, -webkit-clip-path 0.5s ease-in;
 }
@@ -166,6 +157,13 @@ li {
   text-align: center;
   line-height: 30px;
   margin-right: 8px;
+}
+
+.header .btn1:hover {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  background: white;
+  color: #000;
 }
 
 .home {
