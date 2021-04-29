@@ -5,9 +5,6 @@
    @include adaptiv-value(padding-left, 90, 15, 0);
    @include adaptiv-value(padding-right, 90, 15, 0);
    padding-bottom: 50px;
-   background: url(../img/fog-bg.png) center center/cover no-repeat;
-   width: 100vw;
-   min-height: 100vh;
 
    .row {
       display: flex;

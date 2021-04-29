@@ -1,40 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
-@import url(../libs/mdb-ui-kit/css/mdb.min.css);
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url(../libs/bootstrap/css/bootstrap.min.css);
 
 body {
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
 }
-
-.next-page {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 50px;
-     
-    &-up{
-        position: absolute;
-        transform: translate(-50%)  rotate(180deg);
-        left: 50%;
-        bottom: 50px;
-    }
+.container {
+    position: relative;
+    // z-index: 1;
 }
-
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
+@import "../scss/variables";
 @import "../scss/adaptive";
 @import "../scss/header";
 @import "../scss/home";

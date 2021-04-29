@@ -2,9 +2,5 @@
     position: relative;
     @include adaptiv-value(padding-top, 150, 100, 0);
     padding-bottom: 98px;
-    padding-left: 90px;
-    background: url(../img/fog-bg.png) center center/cover no-repeat;
-    width: 100vw;
-    height: 100vh;
- 
+    padding-left: 90px; 
 }
