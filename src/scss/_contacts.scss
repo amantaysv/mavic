@@ -1,6 +1,6 @@
-.contacts{
-    position: relative;
-    @include adaptiv-value(padding-top, 150, 100, 0);
-    padding-bottom: 98px;
-    padding-left: 90px;
+.contacts {
+  position: relative;
+  @include adaptive-value(padding-top, 150, 100, 0);
+  padding-bottom: 98px;
+  padding-left: 90px;
 }

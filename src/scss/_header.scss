@@ -1,134 +1,42 @@
 .header {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+  position: fixed;
+  width: 100%;
+  padding-top: 43px;
+  z-index: 100;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, #000000, transparent);
-    }
+  .navbar {
+    justify-content: space-between;
 
-    .navbar {
-        max-width: 1238px;
-        margin: 0 auto;
+    &-brand {
 
-        &-collapse {
-            justify-content: space-between;
-        }
+      img {
+        margin-right: 11px;
+      }
 
-        &-brand {
-            text-transform: uppercase;
-            color: #fff;
-        }
-
-        &-toggler {
-            &.collapsed {
-                .burger__line {
-                    background: #fff;
-
-                    &::before {
-                        top: 8px;
-                        transform: rotate(0);
-                    }
-
-                    &::after {
-                        bottom: 8px;
-                        transform: rotate(0);
-                    }
-                }
-            }
-
-            .burger {
-                height: 26px;
-                width: 26px;
-
-                &__line {
-                    position: relative;
-                    width: 30px;
-                    height: 2px;
-                    background: none;
-
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        background: #fff;
-                        transform: rotate(135deg);
-                        transition: 0.25s;
-                    }
-
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        bottom: 0;
-                        left: 0;
-                        background: #fff;
-                        transform: rotate(45deg);
-                        transition: 0.25s;
-                    }
-                }
-            }
-        }
+      span {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 18px;
+      }
     }
 
     .nav-item {
+      &:not(:last-child) {
         margin-right: 20px;
-        font-size: 15px;
-        line-height: 2;
-
-        &:last-child {
-            margin-right: 0;
-        }
+      }
+      display: flex;
+      align-items: center;
     }
 
     .nav-link {
-        position: relative;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 15px;
-        padding: 0;
-
-        &:hover::before {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            -webkit-text-stroke: 1px #fff;
-        }
-
-        &.active::before {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-
-        &::before {
-            content: attr(data-content);
-            position: absolute;
-            top: 0;
-            padding-bottom: 4px;
-            border-bottom: 3px solid #ffffff;
-            clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
-            transition: clip-path 0.5s ease-in;
-        }
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 500;
     }
-
-    .btn1 {
-        border: 1px solid #fff;
-        width: 115px;
-        height: 30px;
-        display: block;
-        text-align: center;
-        margin-right: 8px;
-        transition: 0.6s;
-
-        &:hover {
-            background: rgba(255, 255, 255, 1);
-            color: #000;
-        }
+    .btn {
+      padding: 5px 28px;
+      border-radius: 3px;
+      border: 1px solid #fff;
     }
+  }
 }

@@ -1,16 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
-@import url(../libs/bootstrap/css/bootstrap.min.css);
+@import url(../libs/fontawesome/css/all.min.css);
+@import '../scss/adaptive-value';
+@import '../scss/bootstrap';
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-@import "../scss/variables";
-@import "../scss/adaptive";
-@import "../scss/header";
-@import "../scss/home";
-@import "../scss/about";
-@import "../scss/advantages";
-@import "../scss/characteristics";
-@import "../scss/questions";
-@import "../scss/contacts";
+
+@import '../scss/variables';
+@import '../scss/header';
+@import '../scss/home';
+@import '../scss/about';
+@import '../scss/advantages';
+@import '../scss/characteristics';
+@import '../scss/questions';
+@import '../scss/contacts';
+@import '../scss/burger';

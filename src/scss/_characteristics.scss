@@ -1,6 +1,17 @@
-.characteristics{
-    position: relative;
-    @include adaptiv-value(padding-top, 150, 100, 0);
-    padding-bottom: 98px;
-    padding-left: 90px; 
+.characteristics {
+  @include adaptive-value(padding-top, 120, 50, 0);
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  .wrapper {
+    &__title {
+      font-size: 21px;
+      font-weight: bold;
+    }
+    &__subtitle {
+      font-weight: 300;
+      font-size: 15px;
+    }
+  }
 }
